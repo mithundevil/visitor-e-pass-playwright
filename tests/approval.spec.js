@@ -5,7 +5,7 @@ test('Approve Visitor E-Pass', async ({ page }) => {
   const passId = process.env.PASS_ID || 'VXP123456'; // You can use env file or shared memory
 
   // Login as approver
-  await page.goto('https://www.gateease.in/');
+  await page.goto('https://staging.gateease.in');
   await page.fill('input[name=email]', 'divya.m@company.com');
   await page.fill('input[name=password]', 'Mintern@123');
   await page.click('button:has-text("Sign-in")');

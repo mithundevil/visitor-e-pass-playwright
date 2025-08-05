@@ -22,7 +22,7 @@ test('Scan, Punch-In, Punch-Out, Premise-Out Visitor', async ({ browser }) => {
   // --- SCAN (Meena)
   const scanCtx = await browser.newContext();
   const scanPage = await scanCtx.newPage();
-  await scanPage.goto('https://www.gateease.in/');
+  await scanPage.goto('https://staging.gateease.in');
   await scanPage.getByRole('textbox', { name: 'Enter your email address' }).fill('meena.a@company.com');
   await scanPage.getByRole('textbox', { name: 'Enter your password' }).fill('Mintern@123');
   await scanPage.getByRole('button', { name: 'Sign-in' }).click();
@@ -40,7 +40,7 @@ test('Scan, Punch-In, Punch-Out, Premise-Out Visitor', async ({ browser }) => {
   // --- PUNCH-IN (Kumar)
   const punchInCtx = await browser.newContext();
   const punchInPage = await punchInCtx.newPage();
-  await punchInPage.goto('https://www.gateease.in/');
+  await punchInPage.goto('https://staging.gateease.in');
   await punchInPage.getByRole('textbox', { name: 'Enter your email address' }).fill('kumar.r@company.com');
   await punchInPage.getByRole('textbox', { name: 'Enter your password' }).fill('Mintern@123');
   await punchInPage.getByRole('button', { name: 'Sign-in' }).click();
@@ -57,7 +57,7 @@ test('Scan, Punch-In, Punch-Out, Premise-Out Visitor', async ({ browser }) => {
   // --- PUNCH-OUT (Kumar)
   const punchOutCtx = await browser.newContext();
   const punchOutPage = await punchOutCtx.newPage();
-  await punchOutPage.goto('https://www.gateease.in/');
+  await punchOutPage.goto('https://staging.gateease.in');
   await punchOutPage.getByRole('textbox', { name: 'Enter your email address' }).fill('kumar.r@company.com');
   await punchOutPage.getByRole('textbox', { name: 'Enter your password' }).fill('Mintern@123');
   await punchOutPage.getByRole('button', { name: 'Sign-in' }).click();
@@ -77,7 +77,7 @@ test('Scan, Punch-In, Punch-Out, Premise-Out Visitor', async ({ browser }) => {
   // --- PREMISE-OUT (Meena)
   const outCtx = await browser.newContext();
   const outPage = await outCtx.newPage();
-  await outPage.goto('https://www.gateease.in/');
+  await outPage.goto('https://staging.gateease.in');
   await outPage.getByRole('textbox', { name: 'Enter your email address' }).fill('meena.a@company.com');
   await outPage.getByRole('textbox', { name: 'Enter your password' }).fill('Mintern@123');
   await outPage.getByRole('button', { name: 'Sign-in' }).click();

@@ -22,7 +22,7 @@ test('Register Visitor E-Pass with fake camera and PDF', async ({ page }) => {
   if (!fs.existsSync(pdfPath)) throw new Error('Missing Attendance_Jun_2025.pdf');
 
 // Step 1: Login
-await page.goto('https://www.gateease.in/');
+await page.goto('https://staging.gateease.in');
 await page.getByRole('textbox', { name: /email/i }).fill('visitormaster@gmail.com');
 await page.getByRole('textbox', { name: /password/i }).fill('Mintern@123');
 await page.getByRole('button', { name: /sign-in/i }).click();

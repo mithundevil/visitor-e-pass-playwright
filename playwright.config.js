@@ -7,7 +7,7 @@ export default defineConfig({
     timeout: 10000
   },
   use: {
-    baseURL: 'https://www.gateease.in/',
+    baseURL: 'https://staging.gateease.in',
     headless: false,
     viewport: { width: 1280, height: 800 },
   },
